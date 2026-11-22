@@ -1,0 +1,51 @@
+/* Roster design tokens. Light theme by default; dark values below. */
+:root {
+  --paper: 251 252 250;        /* #FBFCFA page */
+  --surface: 255 255 255;      /* #FFFFFF panels, table */
+  --sunken: 242 245 242;       /* #F2F5F2 header rows, inputs at rest */
+  --ink: 43 47 46;             /* #2B2F2E graphite text */
+  --ink-muted: 98 107 104;     /* #626B68 secondary text */
+  --rule: 217 222 217;         /* #D9DED9 hairlines */
+  --rule-strong: 186 194 189;  /* #BAC2BD input borders */
+  --brand: 31 61 54;           /* #1F3D36 chalkboard green */
+  --brand-ink: 251 252 250;    /* text on brand */
+  --brand-soft: 226 236 231;   /* #E2ECE7 tinted brand */
+  --highlight: 242 214 59;     /* #F2D63B highlighter */
+  --highlight-soft: 252 244 196; /* #FCF4C4 selected row */
+  --danger: 176 42 42;         /* #B02A2A */
+  --danger-soft: 251 232 230;
+  --ok: 30 110 72;             /* #1E6E48 */
+  --ok-soft: 224 241 231;
+  --warn: 150 95 0;            /* #965F00 */
+  --warn-soft: 250 238 214;
+  --neutral-soft: 234 236 235;
+
+  --shadow-panel: 0 1px 0 rgb(var(--rule)), 0 12px 32px -12px rgb(31 61 54 / 0.18);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: 17 22 20;
+    --surface: 24 31 28;
+    --sunken: 30 38 35;
+    --ink: 229 235 232;
+    --ink-muted: 152 164 159;
+    --rule: 44 54 50;
+    --rule-strong: 68 80 75;
+    --brand: 127 190 163;      /* lighter green reads on dark */
+    --brand-ink: 17 22 20;
+    --brand-soft: 31 48 42;
+    --highlight: 242 214 59;
+    --highlight-soft: 64 58 22;
+    --danger: 240 128 120;
+    --danger-soft: 62 30 28;
+    --ok: 120 205 160;
+    --ok-soft: 26 52 40;
+    --warn: 236 186 92;
+    --warn-soft: 60 46 20;
+    --neutral-soft: 40 48 45;
+    --shadow-panel: 0 1px 0 rgb(var(--rule)), 0 16px 40px -12px rgb(0 0 0 / 0.6);
+    color-scheme: dark;
+  }
+}
